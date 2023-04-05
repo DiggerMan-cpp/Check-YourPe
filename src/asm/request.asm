@@ -3,8 +3,8 @@ section .data
     host db "example.com", 0 ; хост
     path db "/redirect", 0 ; пас реквеста
     port dw 80
-    user_agent db "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36", 0 ; юзер агент
-    request db "GET /redirect HTTP/1.1\r\nHost: example.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\r\nConnection: close\r\n\r\n", 0
+    user_agent db , 0 ; юзер агент свой
+    request db "GET... свой реквест тут", 0
 
 section .bss
     buffer resb 1024 ; тут буфер
