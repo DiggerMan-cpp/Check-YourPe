@@ -1,4 +1,4 @@
-asm
+; not ready сейчас
 section .data
     host db "example.com", 0 ; хост
     path db "/redirect", 0 ; пас реквеста
